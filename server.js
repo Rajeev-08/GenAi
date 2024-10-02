@@ -7,9 +7,9 @@ const PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname)); // Serve all files from the current directory
+app.use(express.static(__dirname)); 
 
-// Serve the static HTML file
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
