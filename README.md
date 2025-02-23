@@ -21,4 +21,17 @@ Clone the repository:
 ```sh
 git clone https://github.com/yourusername/your-repository.git
 cd your-repository
-## 
+```
+Install dependencies:
+```sh
+npm install
+```
+Set up environment variables by creating a `.env` file in the root directory and adding your Google Generative AI API key:
+`echo 'GEMINI_API_KEY="your_apikey"' > .env`
+Alternatively, you can manually create the .env file and add:
+`GEMINI_API_KEY="your_apikey"`
+Start the server:
+`node server.js`
+The server will start on: http://localhost:3000
+
+
